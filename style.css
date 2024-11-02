@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+  margin-top: 11%;
+  background-image: linear-gradient(to left, rgba(0, 166, 255, 0.5), rgba(0, 68, 255, 0.8));
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: fit-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    background-color: #ebf9fc; 
+    padding: 25px;
+    width: 400px; 
+    margin: auto;
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.app {
+    text-align: center; 
+    display: flex;
+    gap:5px;
+   
+}
+
+input[type="text"], select{
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 2px solid #1976d2;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #42a5f5;
+}
+
+
+#btn{
+    display: block;
+    background-color: #1976d2;
+    height: 100%;
+    padding: 11px 18px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    transition: 0.3sec;
+}
+
+#btn:hover{
+    background-color: #42a5f5;
+}
+
+.list-container{
+    width: 90%;
+    height: auto;
+    margin:0 auto;
+    /* border: 2px solid black;
+    background-color: rgb(123, 230, 97); */
+    display: flex;
+    flex-direction: column;
+}
+
+.container h4{
+    margin-top: 1em;
+}
+
+.list-container .items{
+    margin-top: 1em;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.items p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem ;
+    height: auto;
+    width: 70%;
+    overflow-wrap: break-word;
+    flex-grow: 1;
+    padding: 0.5em;
+}
+
+.items #edit{
+    background-color: rgb(53, 184, 92);
+    border: none;
+    border-radius: 4px;
+    color:#ffffff ;
+    height: 50%;
+    margin: 7.5px 5px 7.5px 0;
+    padding: 10px 10px ;    
+}
+
+.items #delete{
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    color:#ffffff ;
+    height: 50%;
+    margin-top: 7.5px;
+    margin-right: 5px;
+    padding: 10px 10px ;    
+}
+
+@media (max-width:426px){
+    .container{
+        width:300px ;
+    }
+    
+   .app input{
+        padding: 0.5em;
+    }
+
+    .list-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:320px){
+    
+    #btn{
+        padding: 10px 12px;
+    }
+}
+
+
